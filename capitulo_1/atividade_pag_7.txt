@@ -1,8 +1,0 @@
-1 - Inicia o conteúdo principal da página na área visível.
-2 - Insere o título principal da página
-3 - Insere uma imagem
-4 - Insere um parágrafo de texto, onde temos um link para outra página e um texto em itálico.
-5 - Insere o subtítulo da página.
-6 - Insere um segundo parágrafo.
-7 - Encerra a sessão do conteúdo principal.
-8 - Encerra o documento html.
