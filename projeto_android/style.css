@@ -1,0 +1,164 @@
+/*
+Paleta: 
+#2F005E -> Roxo ESCURO
+#9444E3 -> Roxo AROSADO
+#6F00DE -> Roxo BÁSICO CLARO
+#3D1C5E -> Roxo VINHO
+#5500AB -> Roxo BÁSICO
+#cdc4d6 -> Roxo PÁLIDO
+*/
+
+body {
+    background-color: #cdc4d6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    border: 0; margin: 0; padding: 0;
+}
+
+#titulo_pagina {
+    text-transform: uppercase;
+    color: #2F005E;
+    margin: 20px 0px 20px 0px;
+}
+
+.subtitle {
+    margin: 20px 0px 20px 0px;
+    
+    
+    color: #2F005E;
+    
+    
+    
+    background-image: linear-gradient(to right, #ad72e7, #cdc4d6, white);
+    padding-left: 10px;
+}
+
+.cabecalho {
+    background-image: linear-gradient(to bottom, #9444E3, #6F00DE, #5500AB, #2F005E);
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px;
+    color: rgb(250, 250, 250);
+}
+
+#paragrafo_header {
+    font-size: 15pt; 
+    text-align: center; 
+    line-height: initial;
+}
+
+nav {
+    padding: 10px;
+}
+
+.nav_link {
+    border-radius: 3px;
+    padding: 6px;
+    color: #ca94ff; 
+}
+
+.nav_link:hover {
+    background-color: #9444E3;
+    color: #2F005E;
+}
+
+#texto_header {
+    width: 40%;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+#principal {
+    width: 60vw;
+    margin-left: auto; margin-right: auto;
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+    background-color: white;
+}
+
+#main1, #main2 {
+    padding: 20px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+#video {
+    display: flex;
+    background-color: #2F005E;
+    justify-content: center;
+    padding: 30px 10px 30px 10px;
+    
+}
+
+.margem_texto {
+    margin-left: 2em;
+}
+
+strong, .link {
+    color: #2F005E;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #2F005E;
+    color: white;
+    text-align: center;
+    padding: 2px;
+}
+
+.texto_forte_footer {
+    color: #ad72e7;
+}
+
+#aside_title {
+    margin: 20px 0px 20px 0px;
+    background-color: #3D1C5E;
+    padding: 10px;
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: medium;
+}
+
+aside {
+    background-color: #cdc4d6 ;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#aside_content {
+    padding: 10px;
+}
+
+#versions_android {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px 10px 0px;
+}
+
+img#person_and_android {
+    display: block;
+    margin-right: auto; margin-left: auto;
+    width: 50%;
+}
+
+ol {
+    list-style-type: "\2714\00A0\00A0";
+}
+
+img {
+    margin-top: 10px; margin-bottom: 10px;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+}
