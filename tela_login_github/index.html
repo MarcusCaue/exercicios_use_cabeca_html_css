@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login do GitHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login">
+        <header>
+            <a href="https://github.com/" hreflang="en">
+                <img src="images/github_logo_branco.png" alt="Logo do GitHub">
+            </a>
+            <h1>Entre no GitHub</h1>
+        </header>
+
+        <main>
+            <section id="form_login">
+                <form method="POST">
+                    <section id="user">
+                        <label for="user_email">Nome de usuário ou endereço de email</label>
+                        <input type="text" name="user_email" id="user_email"> <br>
+                    </section>
+                    
+                    <section id="senha">
+                        <section id="text_password">
+                            <label for="password">Senha</label>
+                            <a href="https://github.com/password_reset" hreflang="en" id="link_forgot_password">Esqueceu a senha?</a>
+                        </section>
+                        <input type="password" name="password" id="password">
+                    </section>
+
+                    <section id="button_submit">
+                        <button type="submit">Entrar</button>
+                    </section>
+                </form>
+            </section>
+            <section id="new_account">
+                <p>Novo no GitHub? <a href="https://github.com/signup?return_to=https%3A%2F%2Fgithub.com%2Fsignup%3Fref_cta%3DSign%2Bup%26ref_loc%3Dheader%2Blogged%2Bout%26ref_page%3D%252F%26source%3Dheader-home&source=login" hreflang="en">Crie uma conta agora mesmo!</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="https://github.com/site/terms" hreflang="en">Termos e Serviços</a>
+                <a href="https://github.com/site/privacy" hreflang="en">Privacidade</a>
+                <a href="https://docs.github.com/articles/github-security/" hreflang="en">Segurança</a>
+                <a href="https://github.com/contact" hreflang="en" id="link_contato">Contate ao GitHub</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
