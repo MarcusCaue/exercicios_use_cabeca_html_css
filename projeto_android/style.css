@@ -97,10 +97,6 @@ p {
     
 }
 
-.margem_texto {
-    margin-left: 2em;
-}
-
 strong, .link {
     color: #2F005E;
 }
@@ -161,4 +157,8 @@ img {
 .link {
     text-decoration: none;
     font-weight: bold;
+}
+
+main > p::first-letter, #aside_content > p::first-letter {
+    margin-left: 2em;
 }
