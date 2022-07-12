@@ -20,20 +20,20 @@
             <section id="form_login">
                 <form method="POST">
                     <section id="user">
-                        <label for="user_email">Nome de usuário ou endereço de email</label>
+                        <section class="label_input"><label for="user_email">Nome de usuário ou endereço de email</label></section>
                         <input type="text" name="user_email" id="user_email"> <br>
                     </section>
                     
                     <section id="senha">
-                        <section id="text_password">
+                        <section class="label_input" id="text_password">
                             <label for="password">Senha</label>
                             <a href="https://github.com/password_reset" hreflang="en" id="link_forgot_password">Esqueceu a senha?</a>
                         </section>
-                        <input type="password" name="password" id="password">
+                        <input type="password" onfocus="border_color_input()" name="password" id="password">
                     </section>
 
                     <section id="button_submit">
-                        <button type="submit">Entrar</button>
+                        <button type="button">Entrar</button>
                     </section>
                 </form>
             </section>
@@ -44,10 +44,10 @@
 
         <footer>
             <nav>
-                <a href="https://github.com/site/terms" hreflang="en">Termos e Serviços</a>
+                <a href="https://github.com/site/terms" hreflang="en">Termos e <br> Serviços</a>
                 <a href="https://github.com/site/privacy" hreflang="en">Privacidade</a>
                 <a href="https://docs.github.com/articles/github-security/" hreflang="en">Segurança</a>
-                <a href="https://github.com/contact" hreflang="en" id="link_contato">Contate ao GitHub</a>
+                <a href="https://github.com/contact" hreflang="en" id="link_contato">Contate ao <br> GitHub</a>
             </nav>
         </footer>
     </div>
