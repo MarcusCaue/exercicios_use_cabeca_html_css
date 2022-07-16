@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- CSS Local -->
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- BootStrap import -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</head>
+<body>  
+    <div class="container col-10 col-md-5 col-5 mt-5 border border-dark border-1 rounded-3 p-4">
+        <header class="text-center">
+            <h1>Faça seu Login</h1>
+        </header>
+        <div class="container">
+            <form method="POST" action="dados.php">
+                <!-- Email -->
+                <div class="form-group my-2">
+                    <label for="email_login" class="col-sm-1-12 col-form-label">Email</label>
+                    <div class="col-sm-1-12">
+                        <input type="email" class="form-control" name="email_login" id="email_login" placeholder="nome@exemplo.com" aria-describedby="feedback_email">
+                    </div>
+                    <span id="feedback_email" class="text-muted"></span>
+                </div>
+                <!-- Senha -->
+                <div class="form-group my-2">
+                    <label for="senha_login">Senha</label>
+                    <input type="password" name="senha_login" id="senha_login" class="form-control" placeholder="Digite sua Senha" aria-describedby="feedback_password">
+                    <span id="feedback_password" class="text-muted"></span>
+                </div>
+                <!-- Área dos Botões -->
+                <div class="form-group text-end my-2">
+                    <input type="reset" class="btn btn-secondary" value="Limpar">
+                    <input type="submit" class="btn btn-primary" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
