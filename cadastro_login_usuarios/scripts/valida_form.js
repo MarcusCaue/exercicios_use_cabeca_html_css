@@ -1,8 +1,4 @@
-function valida_form() {
-    // Obtendo os dados
-    let email = document.querySelector("input#email_login").value
-    let senha = document.querySelector("input#senha_login").value
-
+function valida_login() {
     // Varíaveis que vão controlar se o form dará o submit ou não
     let senha_valida = false
     let email_valido = false
@@ -17,40 +13,74 @@ function valida_form() {
     feedback_senha.innerHTML = ""
 
     // Validando o email
-    if (email == "" || email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/) == null) {
+    email_valido = valida_email()
+    if (email_valido) {
+        feedback_email.className += "p-1 text-primary"
+        feedback_email.innerHTML = "<img src='../images/check-circle.svg' alt='Sinalzinho de que algo está checado.'> Email válido."
+    } else {
         feedback_email.className += "p-1 text-danger"
         feedback_email.innerHTML = "<img src='../images/shield-exclamation.svg' alt='Escudo de alerta de que algo está errado.'> Informe um email válido."
-        email_valido = false
-    } else {
-        // Validando o domí­nio do email (os caracteres pós @)
-        let dominio = email.substring(email.indexOf("@") + 1)
-        let dominiosAceitos = ["gmail.com", "hotmail.com", "outlook.com", "ifpb.edu.br", "academico.ifpb.edu.br"]
-
-        if (!(dominiosAceitos.includes(dominio))) {
-            feedback_email.className += "p-1 text-danger"
-            feedback_email.innerHTML = "<img src='../images/shield-exclamation.svg' alt='Escudo de alerta de que algo está errado.'> Digite um domínio de email válido."
-            email_valido = false
-        } else {
-            feedback_email.className += "p-1 text-primary"
-            feedback_email.innerHTML = "<img src='../images/check-circle.svg' alt='Sinalzinho de que algo está checado.'> Email válido."
-            email_valido = true
-        }
     }
 
     // Validando a senha
-    if (senha == "") {
-        feedback_senha.className += "p-1 text-danger"
-        feedback_senha.innerHTML = "<img src='../images/shield-exclamation.svg' alt='Escudo de alerta de que algo está errado.'> Insira a sua senha."
-        senha_valida = false
-    } else {
+    senha_valida = valida_senha()
+    if (senha_valida) {
         feedback_senha.className += "p-1 text-primary"
         feedback_senha.innerHTML = "<img src='../images/check-circle.svg' alt='Sinalzinho de que algo está checado.'> Senha válida."
-        senha_valida = true
+    } else {
+        feedback_senha.className += "p-1 text-danger"
+        feedback_senha.innerHTML = "<img src='../images/shield-exclamation.svg' alt='Escudo de alerta de que algo está errado.'> Insira a sua senha."
     }
-
+    
     if (email_valido && senha_valida) {
         return true
     } else {
         return false
     }
+}
+
+function valida_email() {
+    // Obtendo o dado
+    let email = document.querySelector("input#email_login").value
+
+    if (email == "" || email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/) == null) {
+        return false
+    } else {
+        // Validando o domí­nio do email (os caracteres pós @)
+        let dominio = email.substring(email.indexOf("@") + 1)
+        let dominiosAceitos = ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com", "ifpb.edu.br", "academico.ifpb.edu.br"]
+
+        if (!(dominiosAceitos.includes(dominio))) {
+            return false
+        } else {
+            return true
+        }
+    }
+}
+
+function valida_senha() {
+    // Obtendo o dado
+    let senha = document.querySelector("input#senha_login").value
+    
+    if (senha == "") {
+        return false
+    } else {
+        return true
+    }
+}
+
+function valida_nome() {
+    // Obtendo o dado
+
+
+}
+
+function valida_idade() {
+
+}
+
+
+
+function valida_cadastro() {
+
 }
