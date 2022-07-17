@@ -71,16 +71,27 @@ function valida_senha() {
 
 function valida_nome() {
     // Obtendo o dado
+    let nome = document.querySelector("input#nome").value
 
-
+    if (nome.match(/^[A-Z a-z]+$/) == null) {
+        return false
+    } else {
+        return true
+    }
 }
 
 function valida_idade() {
+    // Obtendo o dado 
+    let idade = document.querySelector("input#idade").value
 
+    if (idade < 12 || idade > 130) {
+        return false
+    } else {
+        return true
+    }
 }
 
-
-
 function valida_cadastro() {
+    
 
 }
