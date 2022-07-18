@@ -23,7 +23,7 @@
 </head>
 
 <body>
-  <div class="container col-10 col-md-5 col-5 mt-5 border border-dark border-1 rounded-3 p-4" id="container_principal">
+  <main class="container col-10 col-md-5 col-5 mt-5 border border-dark border-1 rounded-3 p-4 container_page">
     <header class="text-center border-bottom border-dark border-1">
       <h1>Faça seu Login</h1>
     </header>
@@ -49,12 +49,16 @@
 
         <!-- Área dos Botões -->
         <div class="form-group text-end my-2">
-          <input type="reset" class="btn btn-secondary" value="Limpar">
-          <input type="submit" onclick="return valida_login()" class="btn btn-primary" value="Enviar">
+          <input type="reset" class="btn btn-secondary" value="Limpar" onclick="limpa_form()">
+          <input type="submit"  class="btn btn-primary" value="Enviar" onclick="return valida_login()">
         </div>
       </form>
     </div>
-  </div>
+  </main>
+
+  <footer class="container col-10 col-md-5 col-5 mt-5 border border-dark border-1 rounded-3 p-4 text-center container_page">
+    Ainda não possui uma conta? <a href="cadastro.html" hreflang="pt-br" rel="next">Clique aqui</a> e crie uma agora. Não vai demorar 3 minutos. ;)
+  </footer>
 </body>
 
 </html>

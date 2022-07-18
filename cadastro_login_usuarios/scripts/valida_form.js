@@ -32,28 +32,23 @@ function valida_cadastro() {
   // Controladores do submit 
   let senha_vld, email_vld, nome_vld, idade_vld
 
-  // Selecionando os elementos de feedback
-  fb_email = document.querySelector("span#feedback_email")
-  fb_senha = document.querySelector("span#feedback_senha")
-  fb_nome = document.querySelector("span#feedback_nome")
-  fb_idade = document.querySelector("span#feedback_idade")
-
-  fb_email.className = fb_email.innerHTML = fb_senha.className = fb_senha.innerHTML = fb_nome.className = fb_nome.innerHTML = fb_idade.className = fb_idade.innerHTML = ""
-
   // Validando o email
   email_vld = valida_email(email)
-  if (email_vld) {
-    fb_email.className = "p-1 text-primary"
-    fb_email.innerHTML = "<img src='../images/check-circle.svg' alt='Sinalzinho de que algo está checado.'> Email válido."
-  } else {
-    fb_email.className = "p-1 text-danger"
-    fb_email.innerHTML = "<img src='../images/shield-exclamation.svg' alt='Escudo de alerta de que algo está errado.'> Informe um email válido."
-  }
+  feedback(email_vld, "Email")
 
-  if (email_vld && nome_vld && senha_vld && idade_vld) {
-    return true
-  }
-  return false
+  // Validando a senha
+  senha_vld = valida_senha(senha)
+  feedback(senha_vld, "Senha")
+
+  // Validando o nome
+  nome_vld = valida_nome(nome)
+  feedback(nome_vld, "Nome")
+
+  // Validando a idade
+  idade_vld = valida_idade(idade)
+  feedback(idade_vld, "Idade")
+
+  return ((email_vld && nome_vld && senha_vld && idade_vld) ? true : false)
 }
 
 function valida_login() {
@@ -102,4 +97,13 @@ function feedback(tipo_feedback, campo) {
     fdb.innerHTML = img_error + ` ${campo} inválido.`
   }
 
+}
+
+function limpa_form() {
+  let feedbacks_campos = document.querySelectorAll("span")
+  
+  for (let i = 0; i < feedbacks_campos.length; i++) {
+    feedbacks_campos[i].className = ""
+    feedbacks_campos[i].innerHTML = ""
+  }
 }
