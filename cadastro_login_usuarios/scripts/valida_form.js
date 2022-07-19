@@ -53,8 +53,8 @@ function valida_cadastro() {
 
 function valida_login() {
   // Obtendo os dados
-  let email = document.querySelector("input#email_login").value.trim()
-  let senha = document.querySelector("input#senha_login").value
+  let email = document.querySelector("input#email").value.trim()
+  let senha = document.querySelector("input#senha").value
 
   // Varíaveis que vão controlar se o form dará o submit ou não
   let senha_valida, email_valido
