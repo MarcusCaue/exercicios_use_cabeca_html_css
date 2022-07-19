@@ -73,7 +73,7 @@ function valida_login() {
 function feedback(tipo_feedback, campo) {
   // Selecionando o span que exibirá o feedback na página
   let fdb = document.querySelector(`span#feedback_${campo.toLowerCase()}`)
-  // Resetando o conteúdo e as classes do feedback caso este já os possua com algum valor
+  // Resetando o conteúdo e as classes do feedback caso ele já os possua com algum valor
   fdb.className = fdb.innerHTML = ""
 
   // Classes que serão adicionadas quando o campo for válido
