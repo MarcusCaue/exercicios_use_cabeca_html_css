@@ -28,14 +28,14 @@
       <h1>Faça seu Login</h1>
     </header>
 
-    <div>
-      <form id="form_login" method="POST">
+    <section>
+      <form method="POST">
 
         <!-- Email -->
         <div class="form-group my-2">
           <label for="email" class="col-sm-1-12 col-form-label">Email</label>
           <input type="email" class="form-control" name="email" id="email"
-            placeholder="nome@exemplo.com" aria-describedby="feedback_email">
+            placeholder="nome@exemplo.com">
           <span id="feedback_email" class=""></span>
         </div>
 
@@ -43,7 +43,7 @@
         <div class="form-group my-2">
           <label for="senha">Senha</label>
           <input type="password" name="senha" id="senha" class="form-control"
-            placeholder="Digite sua senha" aria-describedby="feedback_senha">
+            placeholder="Digite sua senha">
           <span id="feedback_senha" class=""></span>
         </div>
 
@@ -53,7 +53,7 @@
           <input type="submit"  class="btn btn-primary" value="Enviar" onclick="return valida_login()">
         </div>
       </form>
-    </div>
+    </section>
   </main>
 
   <footer class="container col-10 col-md-5 mt-4 border border-dark border-1 rounded-3 p-4 text-center container_page">
