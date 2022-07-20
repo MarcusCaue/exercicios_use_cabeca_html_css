@@ -20,7 +20,7 @@
 		crossorigin="anonymous"></script>
 </head>
 <body>
-  <main class="container col-10 col-md-5 mt-5 border border-dark border-1 rounded-3 p-4 container_page">
+  <main class="container col-10 col-md-7 mt-5 border border-dark border-1 rounded-3 p-4 container_page">
 
     <header class="">
       <h1 class="text-center pb-2 border-bottom border-dark border-1">Cadastro feito com sucesso</h1>
@@ -33,12 +33,29 @@
     <section id="dados_form" class="p-2 border border-dark border-1 rounded">
       <h2 class="fs-3 pb-2 border-bottom border-dark border-1">Dados enviados pelo formulário</h2>
 
-      <section>
+      <section style="overflow-x: auto;">
         
+        <table class="table table-bordered text-center">
+          <thead class="bg-dark text-white">
+            <tr scope="row">
+              <th scope="col">Nome</th>
+              <th scope="col">Idade</th>
+              <th scope="col">Email</th>
+              <th scope="col">Senha</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr scope="row">
+              <?php exibir_dados($conexao) ?>
+            </tr>
+          </tbody>
+        </table>
+
       </section>
 
     </section>
-    
   </main>
+
 </body>
 </html>
