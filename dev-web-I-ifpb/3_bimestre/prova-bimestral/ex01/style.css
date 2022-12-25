@@ -1,0 +1,19 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p#texto1 {
+    color: red;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+p#texto2 {
+    color: rgb(5, 141, 5);
+    font-size: 20px;
+}
+
+p#texto3 {
+    color: rgb(94, 30, 155);
+}

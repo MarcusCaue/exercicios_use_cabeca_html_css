@@ -1,0 +1,115 @@
+body {
+    background-color: #202124 !important;
+    color: white !important;
+    margin: 15px 8px 8px 8px !important;
+    /* Outra cor: #3C4043*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+#gravacao {
+    width: 120px;
+    background-color: #D04523;
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.perfis {
+    width: 32% !important;
+    height: 152px !important;
+    background-color: #3C4043;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+img {
+    border-radius: 100%;
+    width: 104px !important;
+    height: 100px !important;
+}
+
+#chat {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+#topo {
+    margin-top: 10px;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+#adm-action {
+    font-size: 12px;
+    justify-content: space-between;
+    background-color: #e2ecfa;
+    border-radius: 2px;
+}
+
+.msg {
+    font-size: 13px;
+    padding: 5px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.hour {
+    color: #747070;
+    width: auto !important;
+}
+
+.buttons-chat {
+    background-color: transparent;
+    border-color: transparent;
+    width: auto !important;
+}
+
+#envio-mensagem {
+    margin-top: 10%;
+    border-radius: 15px;
+    background-color: #e2ecfa;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#enviar-mensagem {
+    width: 89%;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#action-bar {
+    margin-top: 30px;
+}
+
+#mid-actions {
+    text-align: center;
+}
+
+#right-actions {
+    text-align: right;
+}
+
+.btn {
+    color: white !important;
+    background-color: #3C4043 !important;
+    border-radius: 100% !important;
+    text-align: center;
+    width: 50px;
+    height: 39px;
+}
+
+.button-red {
+    background-color: red !important;
+}

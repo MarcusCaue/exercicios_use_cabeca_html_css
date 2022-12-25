@@ -1,0 +1,89 @@
+/* Reset */
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(139, 0, 0);
+}
+
+header, main, footer {
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+header {
+    margin-top: 10px;
+    font-size: 20pt;
+}
+
+h2#slogan {
+    font-size: 18pt;
+    font-weight: normal;
+}
+
+hr {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header, footer, h3 {
+    text-align: center;
+    color: #5f3000;
+    font-weight: bold;
+}
+
+main {
+    height: 360px;
+}
+
+h3 {
+    font-size: 25pt;
+}
+
+/* "section#resultado" é originada quando o usuário clica no botão "Calcular" */
+section#formulario, section#resultado {
+    font-size: 17pt;
+    width: max-content;
+
+    margin-top: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+input {
+    width: 100px;
+    height: 25px;
+    padding-left: 2px;
+
+    border: 1px solid black;
+    border-radius: 3px;
+
+    font-size: 13pt;
+}
+
+input#calculo {
+    display: block;
+    width: 130px;
+    height: 40px;
+    
+    cursor: pointer;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 35px;
+}
+
+h3#nomeCompanhia {
+    margin-bottom: 15px;
+}
+
+a {
+    color: black;
+}

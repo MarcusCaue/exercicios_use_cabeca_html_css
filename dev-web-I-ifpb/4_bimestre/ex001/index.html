@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realização do Pedido</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho contendo o nome e o slogan da companhia -->
+    <header>
+        <h1>Karthus&#174 - Restaurante e Churrascaria</h1>
+        <h2 id="slogan">O lugar em que a sua barriga nunca fica vazia</h2>
+    </header>
+
+    <hr>
+
+    <!-- Conteúdo Principal da Página -->
+    <main>
+        <h3>Realização do Pedido</h3>
+        <section id="formulario">
+            <form>
+                <!-- Lendo o peso do prato -->
+                <label>Digite o peso (em gramas) do prato de almoço: </label>
+                <input type="number" id="pesoAlmoco" step="0.001" min="1" autofocus required value="1"> <br>
+
+                <!-- Lendo o valor do desconto a ser aplicado sobre o preço do prato -->
+                <label>Insira o valor do desconto: </label>
+                <input type="number" id="desconto" step="1" min="1" max="100" required value="0"> <br>
+                
+                <input type="button" id="calculo" value="Calcular" onclick="calcular()">
+            </form>
+        </section>
+
+        <!-- Após o usuário clicar no botão, a <section> abaixo irá exibir o valor final após os cálculos serem feitos -->
+        <section id="resultado"></section>
+
+    </main>
+    <hr>
+    
+    <!-- Links e nome da companhia -->
+    <footer>
+        <h3 id="nomeCompanhia">Karthus Company&#174</h3>
+        <section id="links">
+            <nav>
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Página Principal</a> |
+                <a href="#">WhatsApp</a> |
+                <a href="#">YouTube</a>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section#cadastro, header, footer {
+    background-color: #B8D9D3;
+    color: #025E73;
+}
+
+header, footer {
+    text-align: center;
+    padding: 10px;
+}
+
+h1#titlePage {
+    font-size: 32pt;
+}
+
+p#saudacao {
+    width: 69%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 14px;
+    font-size: 16pt;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+section#cadastro {
+    border-radius: 6px;
+    padding: 20px;
+    width: 350px;
+    margin-right: 50px;
+}
+
+h2#titleForm {
+    text-align: center;
+    font-size: 13pt;
+}
+
+label {
+    display: inline-block;
+    width: 30%;
+}
+
+input {
+    box-sizing: border-box;
+    margin-top: 15px;
+    width: 67%; 
+    padding: 5px;
+}
+
+div#botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+button {
+    height: 32px;
+    width: 92px;
+    cursor: pointer;
+}
+
+footer {
+    font-size: 10px;
+}
+
+section#links {
+    margin-top: 12px; margin-bottom: 12px;
+    font-size: 13pt;
+}
+
+a {
+    color: #2c4c53;
+}

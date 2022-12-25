@@ -1,0 +1,34 @@
+h1 {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+div#container {
+    width: 260px;
+    margin-right: auto; margin-left: auto;
+}
+
+h2 {
+    background-color: #696969;
+    color: white;
+
+    font-weight: bolder;
+    font-family: system-ui;
+    
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 12px;
+    
+    margin-bottom: 1px;
+}
+
+div.area {
+    background-color: #A2D7E7;
+    color: rgb(56, 86, 168);
+
+    border-radius: 10px;
+    padding: 3px;
+    padding-left: 12px;
+
+    margin-top: 1px;
+}

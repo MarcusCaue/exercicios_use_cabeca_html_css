@@ -1,0 +1,102 @@
+body {
+    background-image: linear-gradient(to right, #274659, #2D5066, #1C3240);
+}
+
+h1 {
+    color: #F29F05;
+    filter: drop-shadow(0px 0px 9px);
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+h2 {
+    color: #6cc7ff;
+    text-align: center;
+    filter: brightness(110%);
+}
+
+h2#question {
+    margin-bottom: 5px;
+}
+
+img {
+    cursor: pointer;
+}
+
+section#imagens {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+    padding: 5px;
+    color: #F29F05;
+}
+
+h3 {
+    text-align: center;
+    color: #F29F05;
+    font-weight: bolder;
+    filter: drop-shadow(0px 0px 9px);
+    font-size: 13pt;
+}
+
+strong, label {
+    color: #6cc7ff;
+    filter: drop-shadow(0px 0px 9px);
+}
+
+div.imovel {
+    background-image: radial-gradient(circle,#274659, #4982A6 207%);
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+input, button {
+    background-color: #F29F05;
+}
+
+div#imovel1 {
+    width: 293px;
+}
+
+div#imovel2 {
+    width: 405px;
+}
+
+div#imovel3 {
+    width: 451px;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    font-size: 24px; 
+}
+
+input {
+    box-sizing: border-box;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 8px;
+    height: 32px;
+    width: 92px;
+    cursor: pointer;
+    border: solid black 1px;
+    border-radius: 10px;
+}

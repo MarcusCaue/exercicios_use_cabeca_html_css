@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Cadastral</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Ficha Cadastral</h2>
+
+        <main id="formulario">
+            <form>
+                <!-- Inserindo o nome -->
+                <section id="name">
+                    <label>Nome: </label>
+                    <input type="text" maxlength="55" id="nome">
+                </section>
+
+                <!-- Inserindo dados de documentos -->
+                <section id="documentos">
+                    <!-- Considerando os pontos e o travessão, o mínimo de caracteres a serem inseridos é 12 para que o documento seja válido -->
+                    <label>RG: </label>
+                    <input type="text" minlength="12" maxlength="12" id="rg">
+
+                     <!-- Considerando os pontos e o travessão, o mínimo de caracteres a serem inseridos é 14 para que o documento seja válido -->
+                    <label>CPF: </label>
+                    <input type="text" minlength="14" maxlength="14" id="cpf">
+                </section>
+
+                <!-- Informando o Endereço -->
+                <section>
+                    <label>Endereço: </label>
+                    <input type="text" maxlength="55" id="endereco">
+                </section>
+
+                <!-- Escolhendo o Sexo e a Data de Nascimento -->
+                <section id="sexo">
+                    <label>Sexo: </label>
+                    <select style="cursor: pointer;">
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                    </select>
+
+                    <!-- Usei o type="date" para evitar que o usuário insira algo que não seja uma data -->
+                    <label id="dataLabel">Data Nascimento: </label>
+                    <input type="date" id="dataNasc">
+                </section>
+
+                <!-- Escolhendo o Estado Civil -->
+                <section id="selecaoEstadoCivil" >
+                    <label>Estado Civil: </label>
+
+                    <input type="radio" name="estadoCivil"/>
+                    <label class="optionEstCivil">Solteiro(a)</label>
+
+                    <input type="radio" name="estadoCivil"/>
+                    <label class="optionEstCivil">Casado(a)</label>
+
+                    <input type="radio" name="estadoCivil"/>
+                    <label class="optionEstCivil">Viúvo(a)</label>
+                </section>
+
+                <!-- Área dos botões -->
+                <section id="botoes">
+                    <button type="reset" id="limpar">Limpar dados</button>
+                    <button type="submit" id="enviar">Enviar dados</button>
+                </section>
+            </form>
+        </main>
+
+</body>
+</html>

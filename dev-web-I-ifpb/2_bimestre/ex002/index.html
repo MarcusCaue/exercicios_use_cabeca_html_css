@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reunião: aaa-bbb-ccc</title>
+    
+    <!-- Importando arquivos de folhas de estilo -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- BootStrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+<body>  
+    <!-- Parte em que fica a palavra "Gravando" -->
+    <div class="row" id="gravacao">
+        <span> <i class="fas fa-circle"></i> GRAVANDO </span>
+    </div>
+
+    <!-- Fotos dos usuários e chat -->
+    <div class="row" id="meio">
+
+        <!-- Parte em que ficam as caixinhas com as fotos e nomes de cada usuário -->
+        <section class="col-md-8">
+                <div class="row">
+                    <div class="perfis">
+                        <img src="images/bisao.jpg" alt="foto de um bisao">
+                        <div>Bisão das Terras Gélidas</div>
+                    </div>
+        
+                    <div class="perfis">
+                        <img src="images/leao.jpg" alt="foto de um leao">
+                        <div>Leão da Savana</div>
+                    </div>
+        
+                    <div class="perfis">
+                        <img src="images/eagle.jpg" alt="foto de uma aguia">
+                        <div>Águia das Montanhas</div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="perfis">
+                        <img src="images/lobo.jpg" alt="foto de um lobo">
+                        <div>Lobo das Neves</div>
+                    </div>
+        
+                    <div class="perfis">
+                        <img src="images/urso.jpg" alt="foto de um urso">
+                        <div>Urso das Florestas</div>
+                    </div>
+        
+                    <div class="perfis">
+                        <img src="images/pinguim.jpg" alt="foto de um pinguim">
+                        <div>Pinguin dos Locais Frios</div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="perfis">
+                        <img src="images/tigre.jpg" alt="foto de um tigre">
+                        <div>Tigre do Oriente</div>
+                    </div>
+        
+                    <div class="perfis">
+                        <img src="images/cavalo.jpg" alt="foto de um cavalo">
+                        <div>Cavalo dos Campos</div>
+                    </div>
+        
+                    <div class="perfis">
+                        <img src="images/elefante.jpg" alt="foto de um elefante">
+                        <div>Elefante da Savana</div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Chat -->
+        <section class="col-md-4" id="chat">
+            <!-- Título do Chat -->
+            <div class="row align-items-center" id="topo">Mensagens na chamada <button class="buttons-chat"><i class="fas fa-times p-0"></i></button></div>
+
+            <!-- Área de ação do administrador da reunião -->
+            <div class="row align-items-center p-2" id="adm-action"> Permitir que todos os participantes enviem mensagens <input type="checkbox" style="width: auto !important;">
+            </div>
+
+            <hr>
+
+            <!-- Algumas mensagens do chat -->
+            <div id="mensagens-chat">
+                <div class="msg">
+                    <div class="username">Jonas de Samos <span class="hour">07:56</span></div>
+                    <div>Eu sou o filósofo mais brabo da Grécia! Um dia, todos conhecerão o meu grandioso nome!!</div>
+                </div>
+                <div class="msg">
+                    <div class="username">Amanda de Abdera <span class="hour">08:10</span></div>
+                    <div>"Em batalha, nós renascemos!" - Pantheon.</div>
+                </div>
+                <div class="msg">
+                    <div class="username">Kleito de Esparta <span class="hour">08:12</span></div>
+                    <div>Vocês tão falando de quê? '-'</div>
+                </div>
+                <div class="msg">
+                    <div class="username">Rafael Miranda <span class="hour">08:15</span></div>
+                    <div>Já dizia São Francisco de Assis: "Pregue o evangelho. Se necessário, use palavras."</div>
+                </div>
+                <div class="msg">
+                    <div class="username">Marcus Cauê <span class="hour">08:30</span></div>
+                    <div>Espero que goste do site, professor! :)</div>
+                </div>
+            </div>
+
+            <!-- Campo para enviar mensagens o chat -->
+            <div id="envio-mensagem">
+                <input type="text" id="enviar-mensagem" placeholder="Enviar mensagem para todos "/>
+                <button class="buttons-chat"><i class="far fa-paper-plane"></i></button>
+            </div>
+            
+        </section>
+    </div>
+
+    <!-- Parte em que ficam os botões com as ações, como também o horário e o código da reuinão -->
+    <div class="row" id="action-bar">
+        <div id="horario-codigo" class="col-md-4 actions">08:30 | aaa-bbb-ccc</div>
+
+        <div id="mid-actions" class="col-md-4 actions">
+            <!-- Abrir Microfone -->
+            <div class="btn"> <i class="fas fa-microphone"></i> </div>
+            <!-- Abrir Câmera -->
+            <div class="btn button-red"> <i class="fas fa-video-slash"></i> </div>
+            <!-- Levantar a mão -->
+            <div class="btn"> <i class="fas fa-hand-paper"></i> </div>
+            <!-- Compartilhar Tela -->
+            <div class="btn"> <i class="fas fa-images"></i> </div>
+            <!-- Mais opções -->
+            <div class="btn"> <i class="fas fa-ellipsis-v"></i> </div>
+            <!-- Sair da chamada -->
+            <div class="btn button-red"> <i class="fas fa-phone"></i> </div>
+        </div>
+
+        <div id="right-actions" class="col-md-4 actions">
+            <!-- Informações da reunião -->
+            <div class="btn"> <i class="fas fa-info-circle"></i> </div>
+            <!-- Ver pessoas presentes na reunião -->
+            <div class="btn"> <i class="fas fa-user-friends"></i> </div>
+            <!-- Abrir o chat -->
+            <div class="btn"> <i class="fas fa-comment-alt"></i> </div>
+            <!-- Ferramentas do Administrador -->
+            <div class="btn"> <i class="fas fa-tools"></i> </div>
+            <!-- Reunião Segura -->
+            <div class="btn"> <i class="fas fa-shield-alt"></i> </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

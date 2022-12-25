@@ -1,0 +1,80 @@
+/* Não sei trabalhar com uma estilização no formato de tabela. Então tentei adaptar usando o que eu sei até então. 
+
+Espero que tenha ficado bom :)
+*/
+
+/* Reset */
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box !important;
+}
+
+body {
+    margin-top: 20px !important;
+}
+
+h2 { 
+    text-align: center; 
+}
+
+main {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+section {
+    margin-top: 7px;
+}
+
+label {
+    display: inline-block;
+    width: 25%;
+}
+
+#endereco, #nome {
+    width: 74%;
+}
+
+#rg, #cpf {
+    width: 23.5%;
+}
+
+#dataLabel {
+    margin-left: 35px;
+}
+
+#dataNasc {
+    width: 23.5%;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.optionEstCivil {
+    width: 20%;
+}
+
+#botoes {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 19%; height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input {
+    height: 25px;
+}
+
+input[type="radio" i] {
+    height: auto;
+    cursor: pointer;
+}

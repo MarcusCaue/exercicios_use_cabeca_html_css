@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+div#conteudo {
+    padding: 3%;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #2A5082, #3A6FB5, #396EB4, #2A5082)
+}
+
+#title {
+    margin-bottom: 0px;
+} 
+
+#subtitle {
+    margin-top: 0;
+    margin-bottom: 10%;
+    font-size: 11px;
+}
+
+form#formulario {
+    width: auto;
+    height: 180px;
+    text-align: center;
+}
+
+label#login {
+    margin-left: 5px;
+}
+
+.leitura {
+    height: 25px; 
+    background-color: #1E4F8A;
+    border-width: 1px;
+    border-color: black;
+    color: white;
+}
+
+#condicaoSenha {
+    width: 174px;
+    margin-left: 136px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 11px;
+}
+
+div#opcoes {
+    margin-bottom: 14px;
+    margin-left: 11px;
+    padding: 9px;
+    font-size: 11px;
+}
+
+.link {
+    color: white;
+}
+
+span#primeiroAcesso {
+    margin: 18px;
+}
+
+button#botão {
+    width: 100px;
+    height: 40px;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: black;
+
+    background-color: #6296EB;
+    color: white;
+}

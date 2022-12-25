@@ -1,0 +1,71 @@
+<!-- Confesso que usar animações foi uma experiência muito divertida kkkkk. Obrigado por ter apresentado esse assunto! :) 
+Ah, espero que tenha gostado, é meu primeiro site em Dark Mode (as cores eu peguei de uma paleta pronta no Instagram e só implementei aqui). -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Montanhês Imobiliária</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="namePage" onmouseenter="mostraMensagem()" onmouseleave="fechaMensagem()">João Montanhês Imobiliária</h1>
+        <h2 id="mensagemOferta"></h2>
+    </header>
+
+    <main>
+        <h2 class="animate__animated animate__zoomIn">Veja os nossos imóveis mais vendidos!</h2>
+        <section id="imagens">
+
+            <div class="imovel animate__animated animate__fadeInLeft animate__delay-1s" id="imovel1">
+                <img src="images/apartamento220.jpg" alt="Prédio" onclick='acessar("https://www.google.com.br/")'>
+                <h3>Apartamento Moderno</h3>
+                <p>Se você está sozinho e deseja ter um ambiente <strong>totalmente seu</strong>, estando perto dos locais mais importantes da cidade, este imóvel com certeza é para você. Apresenta <strong>quartos confortáveis</strong>, cozinha, sala de estar, área de serviços e <strong>muito mais</strong>.</p>
+            </div>
+
+            <div class="imovel animate__animated animate__fadeInUp animate__delay-2s" id="imovel2">
+                <img src="images/casa220.jpg" alt="Casa Simples" onclick='acessar("https://www.crunchyroll.com/pt-br")'>
+                <h3>Casa Simples</h3>
+                <p>Está incomodado com o barulho da cidade e deseja ficar em um <strong>local mais reservado</strong>? Então este imóvel é para você. Uma casa simples, mas perfeita para que aqueles que desejam ter um pouco de sossego.</p>
+            </div>
+
+            <div class="imovel animate__animated animate__fadeInRight animate__delay-3s" id="imovel3">
+                <img src="images/terreno220.jpg" alt="Terrenos" onclick='acessar("https://www.leagueoflegends.com/pt-br/")'>
+                <h3>Terrenos Espaçosos e Customizáveis</h3>
+                <p>Ou então você é um daqueles que sonha há anos em ter uma casa totalmente do <strong>seu jeitinho</strong> e nunca conseguiu realizá-lo, não é mesmo? Não se preocupe! Com os nossos <strong>terrenos</strong> e nossa equipe de arquitetos e engenheiros, nós conseguiremos fazer o seu <strong>sonho</strong> se tornar uma <strong>realidade</strong>!</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="animate__animated animate__fadeInUp animate__delay-4s">
+        <h2 id="question">Você deseja receber ofertas da nossa imobiliária?</h2>
+
+        <form action="https://formsubmit.co/emanuel.filho@ifpb.edu.br" method="POST">
+
+            <!-- Configurando o FormSubmit -->
+            <input type="hidden" name="_subject" value="João Montanhês Imobiliária - Telefone Cadastrado">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+            <textarea name="message" id="mensagemEmail" hidden></textarea>
+
+            <div id="leituraTelefone">
+                <label> Digite o seu telefone: </label>
+                <input type="tel" id="tel">
+            </div>
+
+            <div id="botao">
+                <button id="enviar" type="submit" onclick="return validaForm()">Enviar</button>
+            </div>
+
+        </form>
+    </footer>
+
+</body>
+</html>
