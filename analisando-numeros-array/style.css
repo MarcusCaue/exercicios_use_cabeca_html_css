@@ -1,0 +1,19 @@
+body { background-color: darkviolet; font-family: Arial, Helvetica, sans-serif; }
+div#container { width: 40vw; margin: auto; }
+h1, footer { color: white; text-align: center; }
+footer { font-style: italic; }
+
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 8px 4px 14px 0px black;
+}
+
+section#textarea, section#feedback div {
+  margin-top: 20px;
+}
+
+section#feedback {
+  display: none;
+}

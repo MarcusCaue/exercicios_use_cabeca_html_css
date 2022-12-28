@@ -1,0 +1,55 @@
+<!-- Resolução do exercício proposto pelo professor Gustavo Guanabara, do canal Curso em Vídeo, durante o curso de JavaScript. Fonte: https://youtu.be/vEOEZ03ZyiE -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analisador de Números</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>Analisador de Números</h1>
+    </header>
+
+    <main>
+      <section>
+        <label for="addNumber">Número (entre 1 e 100)</label>
+        <input id="addNumber" name="addNumber" type="number">
+        <button type="button" onclick="addNumber()">Adicionar</button>
+      </section>
+
+      <section id="textarea">
+        <textarea name="numbersArray" id="numbersArray" cols="30" rows="10"></textarea> <br>
+        <button type="button" onclick="showFeedback()">Finalizar</button>
+      </section>
+
+      <section id="feedback">
+        <div>
+          Ao todo, temos <span id="totNumbers">X</span> números cadastrados.
+        </div>
+        <div>
+          O maior valor informado foi o <span id="maiorNumber">X</span>.
+        </div>
+        <div>
+          O menor valor informado foi o <span id="menorNumber">X</span>.
+        </div>
+        <div>
+          Somando todos os valores, temos <span id="somarNumber">X</span>.
+        </div>
+        <div style="margin-bottom: 0">
+          A média dos valores digitados foi <span id="mediaNumber">X</span>.
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p> &copy; Jonas de Samos, O Filósofo Mais Brabo da Grécia </p>
+    </footer>
+  </div>
+</body>
+</html>
