@@ -1,15 +1,16 @@
+import * as functions from "./functions.js" 
+
+const calculadora = functions.calculadora
+
 const buttons = document.querySelectorAll("button")
 
-buttons.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    console.log(e.currentTarget.id)
-    console.log(calculadora[e.currentTarget.id](4, 5))
-  })
-})
+buttons.forEach((btn) => { btn.addEventListener("click", (e) => {
+  let operacaoEscolhida = e.currentTarget.id
+  let entradaCalculadora = document.querySelector("#conta").value
 
-const calculadora = {
-  "somar": (a, b) => { return a + b },
-  "subtrair": (a, b) => { return a - b },
-  "dividir": (a, b) => { return a / b },
-  "multiplicar": (a, b) => { return a * b }
-}
+  console.log(functions.validaEntrada(entradaCalculadora));
+  // let resultado = calculadora[operacaoEscolhida]()
+
+
+}) })
+
