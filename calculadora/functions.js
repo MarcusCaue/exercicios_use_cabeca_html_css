@@ -52,9 +52,5 @@ function temCaracteresAceitos(entrada) {
 } */
 
 export function validaEntrada(entrada) {
-  if (temCaracteresAceitos(entrada)) {
-    return "Tudo certo!"
-  } else {
-    return "Tá errado boy!"
-  }
+  return temCaracteresAceitos(entrada) ? true : false 
 }
