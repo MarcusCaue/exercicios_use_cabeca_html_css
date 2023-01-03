@@ -54,3 +54,9 @@ button {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+button.digit:hover { background-color: #212429; }
+button#clear:hover { background-color: white; color: #0D1117; }
+button#delete:hover { background-color: red; }
+button.operacao:hover { background-color: blue; }
+button#igual:hover { background-color: green;  }
