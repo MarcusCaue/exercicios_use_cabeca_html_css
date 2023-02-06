@@ -5,61 +5,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="../tailwind/output.css" type="text/css">
   <script src="script.js" defer type="module"></script>
   <script src="https://kit.fontawesome.com/a025fafa82.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  
-  <main class="calculadora">
-    <section class="input">
-      <input type="text" name="conta" id="conta">
-      <section id="feedback"></section>
-    </section>
+<body class="bg-background-1" style="font-family: Arial, Helvetica, sans-serif">
+  <div class="root w-screen h-screen box-border">
     
-    <section class="botoes">
-      <div class="linha">
-        <button id="clear" class="dois-espacos">C</button>
+    <main class="bg-background-2 w-1/2 rounded-lg p-3 h-3/4 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+      
+      <section class="my-3">
+        <input type="text" name="conta" id="conta" class="rounded-md w-full bg-background-1 border-border-gray text-white p-3 text-2xl text-right">
+        <section id="feedback" class=""></section>
+      </section>
+    
+      <section class="grid grid-cols-4 grid-rows-5">
+        <button id="clear" class="col-span-2">C</button>
         <button id="delete"><i class="fa-solid fa-delete-left"></i></button>
         <button class="operacao" id="dividir"><i class="fa-solid fa-divide"></i></button>
-      </div>
-      
-      <div class="linha">
-        <div class="dois-espacos">
-          <button class="digit" id="9">9</button>
-          <button class="digit" id="8">8</button>
-        </div>
+
+        <button class="digit" id="9">9</button>
+        <button class="digit" id="8">8</button>
         <button class="digit" id="7">7</button>
         <button class="operacao" id="somar"><i class="fa-sharp fa-solid fa-plus"></i></button>
-      </div>
-      
-      <div class="linha">
-        <div class="dois-espacos">
-          <button class="digit" id="6">6</button>
-          <button class="digit" id="5">5</button>
-        </div>
+       
+        <button class="digit" id="6">6</button>
+        <button class="digit" id="5">5</button>
         <button class="digit" id="4">4</button>
         <button class="operacao" id="subtrair"><i class="fa-sharp fa-solid fa-minus"></i></button>
-      </div>
-     
-      <div class="linha">
-        <div class="dois-espacos">
-          <button class="digit" id="3">3</button>
-          <button class="digit" id="2">2</button>
-        </div>
+    
+        <button class="digit" id="3">3</button>
+        <button class="digit" id="2">2</button>
         <button class="digit" id="1">1</button>
         <button class="operacao" id="multiplicar"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      
-      <div class="linha">
-        <button id="0" class="dois-espacos digit">0</button>
+    
+        <button id="0" class="col-span-2 digit">0</button>
         <button class="digit" id="ponto_flutuante">,</button>
         <button id="igual"><i class="fa-solid fa-equals"></i></button>
-      </div>
-    </section>
-  </main>
 
-  <footer></footer>
+      </section>
+    </main>
+    <footer></footer>
+  </div>
 
 </body>
 </html>
