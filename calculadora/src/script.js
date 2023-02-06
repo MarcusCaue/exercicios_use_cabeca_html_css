@@ -13,4 +13,3 @@ buttons.forEach((btn) => { btn.addEventListener("click", (e) => {
   // let resultado = calculadora[operacaoEscolhida]()
 
 }) })
-

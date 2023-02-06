@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.digit:hover {
+  background-color: #212429;
+}
+
+@layer components {
+ .btn {
+  @apply text-white bg-background-1 rounded border-border-gray cursor-pointer py-3 transition-all duration-300 border-gray-800 border;
+ }
+
+ .operacao:hover {
+  @apply bg-blue-600;
+ }
+}

@@ -9,39 +9,40 @@
   <script src="script.js" defer type="module"></script>
   <script src="https://kit.fontawesome.com/a025fafa82.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-background-1" style="font-family: Arial, Helvetica, sans-serif">
+<body class="bg-background-1" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
   <div class="root w-screen h-screen box-border">
     
-    <main class="bg-background-2 w-1/2 rounded-lg p-3 h-3/4 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+    <main class="bg-background-2 w-3/4 md:w-1/2 rounded-lg p-3 h-3/4 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
       
       <section class="my-3">
-        <input type="text" name="conta" id="conta" class="rounded-md w-full bg-background-1 border-border-gray text-white p-3 text-2xl text-right">
+        <input type="text" name="conta" id="conta" class="rounded-md w-full bg-background-1 border-border-gray text-white p-3 text-lg md:text-2xl text-right">
         <section id="feedback" class=""></section>
       </section>
     
-      <section class="grid grid-cols-4 grid-rows-5">
-        <button id="clear" class="col-span-2">C</button>
-        <button id="delete"><i class="fa-solid fa-delete-left"></i></button>
-        <button class="operacao" id="dividir"><i class="fa-solid fa-divide"></i></button>
+      <section class="grid grid-cols-4 grid-rows-5 text-white bg-background-1 text-lg md:text-2xl h-4/5 box-content">
+        
+        <button class="btn col-span-2 hover:bg-white hover:text-background-1" id="clear">C</button>
+        <button class="btn hover:bg-red-600" id="delete"><i class="fa-solid fa-delete-left"></i></button>
+        <button class="btn operacao" id="dividir"><i class="fa-solid fa-divide"></i></button>
 
-        <button class="digit" id="9">9</button>
-        <button class="digit" id="8">8</button>
-        <button class="digit" id="7">7</button>
-        <button class="operacao" id="somar"><i class="fa-sharp fa-solid fa-plus"></i></button>
+        <button class="btn digit" id="9">9</button>
+        <button class="btn digit" id="8">8</button>
+        <button class="btn digit" id="7">7</button>
+        <button class="btn operacao" id="somar"><i class="fa-sharp fa-solid fa-plus"></i></button>
        
-        <button class="digit" id="6">6</button>
-        <button class="digit" id="5">5</button>
-        <button class="digit" id="4">4</button>
-        <button class="operacao" id="subtrair"><i class="fa-sharp fa-solid fa-minus"></i></button>
+        <button class="btn digit" id="6">6</button>
+        <button class="btn digit" id="5">5</button>
+        <button class="btn digit" id="4">4</button>
+        <button class="btn operacao" id="subtrair"><i class="fa-sharp fa-solid fa-minus"></i></button>
     
-        <button class="digit" id="3">3</button>
-        <button class="digit" id="2">2</button>
-        <button class="digit" id="1">1</button>
-        <button class="operacao" id="multiplicar"><i class="fa-solid fa-xmark"></i></button>
+        <button class="btn digit" id="3">3</button>
+        <button class="btn digit" id="2">2</button>
+        <button class="btn digit" id="1">1</button>
+        <button class="btn operacao" id="multiplicar"><i class="fa-solid fa-xmark"></i></button>
     
-        <button id="0" class="col-span-2 digit">0</button>
-        <button class="digit" id="ponto_flutuante">,</button>
-        <button id="igual"><i class="fa-solid fa-equals"></i></button>
+        <button class="btn col-span-2 digit" id="0">0</button>
+        <button class="btn digit" id="ponto_flutuante">,</button>
+        <button class="btn hover:bg-green-600" id="igual"><i class="fa-solid fa-equals"></i></button>
 
       </section>
     </main>
