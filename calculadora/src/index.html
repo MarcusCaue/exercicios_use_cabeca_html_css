@@ -6,22 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora</title>
   <link rel="stylesheet" href="../tailwind/output.css" type="text/css">
-  <script src="script.js" defer type="module"></script>
+  <script src="./scripts/script.js" defer type="module"></script>
   <script src="https://kit.fontawesome.com/a025fafa82.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-background-1" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
   <div class="root w-screen h-screen box-border">
     
-    <main class="bg-background-2 w-3/4 md:w-1/2 rounded-lg p-3 h-3/4 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+    <main class="bg-background-2 box-content w-3/4 md:w-1/2 rounded-lg p-3 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
       
       <section class="my-3">
+        <section id="feedback" class="w-full text-white opacity-30 p-3 text-right">Jonas</section>
         <input type="text" name="conta" id="conta" class="rounded-md w-full bg-background-1 border-border-gray text-white p-3 text-lg md:text-2xl text-right">
-        <section id="feedback" class=""></section>
       </section>
     
-      <section class="grid grid-cols-4 grid-rows-5 text-white bg-background-1 text-lg md:text-2xl h-4/5 box-content">
+      <section class="grid grid-cols-4 grid-rows-5 text-white bg-background-1 text-lg md:text-2xl h-3/4 box-content">
         
-        <button class="btn col-span-2 hover:bg-white hover:text-background-1" id="clear">C</button>
+        <button class="btn hover:bg-white hover:text-background-1" id="allclear">AC</button>
+        <button class="btn hover:bg-white hover:text-background-1" id="clear">C</button>
         <button class="btn hover:bg-red-600" id="delete"><i class="fa-solid fa-delete-left"></i></button>
         <button class="btn operacao" id="dividir"><i class="fa-solid fa-divide"></i></button>
 
@@ -42,11 +43,10 @@
     
         <button class="btn col-span-2 digit" id="0">0</button>
         <button class="btn digit" id="ponto_flutuante">,</button>
-        <button class="btn hover:bg-green-600" id="igual"><i class="fa-solid fa-equals"></i></button>
+        <button class="btn operacao hover:bg-green-600" id="igual"><i class="fa-solid fa-equals"></i></button>
 
       </section>
     </main>
-    <footer></footer>
   </div>
 
 </body>
