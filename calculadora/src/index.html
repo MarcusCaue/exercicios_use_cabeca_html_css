@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora</title>
   <link rel="stylesheet" href="../tailwind/output.css" type="text/css">
-  <script src="./scripts/script.js" defer type="module"></script>
+  <script src="./scripts/script.js" type="module"></script>
   <script src="https://kit.fontawesome.com/a025fafa82.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-background-1" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
@@ -21,7 +21,7 @@
     
       <section class="grid grid-cols-4 grid-rows-5 text-white bg-background-1 text-lg md:text-2xl h-3/4 box-content">
         
-        <button class="btn hover:bg-white hover:text-background-1" id="allclear">AC</button>
+        <button class="btn hover:bg-white hover:text-background-1" id="allClear">AC</button>
         <button class="btn hover:bg-white hover:text-background-1" id="clear">C</button>
         <button class="btn hover:bg-red-600" id="delete"><i class="fa-solid fa-delete-left"></i></button>
         <button class="btn operacao" id="dividir"><i class="fa-solid fa-divide"></i></button>
@@ -43,11 +43,10 @@
     
         <button class="btn col-span-2 digit" id="0">0</button>
         <button class="btn digit" id="ponto_flutuante">,</button>
-        <button class="btn hover:bg-green-600" id="igual"><i class="fa-solid fa-equals"></i></button>
+        <button class="btn operacao hover:bg-green-600" id="igual"><i class="fa-solid fa-equals"></i></button>
 
       </section>
     </main>
   </div>
-
 </body>
 </html>
